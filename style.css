@@ -173,7 +173,7 @@ a:hover{
     height: 80vh;
   }
   
-  .section__pic-container {
+  .profile__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
@@ -317,59 +317,32 @@ a:hover{
   margin: auto 0;
 }
 
-/* ABOUT SECTION */
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;   /* 根据页面布局需要而定 */
+  margin: 0 auto;
+  /* height: 80%; 建议先注释掉，避免内容不够时造成重叠 */
+}
 
-#about {
-    position: relative;
-  }
-  
-  .about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .about-details-container {
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .about-containers,
-  .about-details-container {
-    display: flex;
-  }
-  
-  .about-pic {
-    border-radius: 2rem;
-  }
-  
-  .arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-  }
-  
-  .details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
-  }
-  
-  .section-container {
-    gap: 4rem;
-    height: 80%;
-  }
-  
-  .section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-  }
+.section__pic-container,
+.about-details-container {
+  flex: 1 1 50%;
+}
 
+.section__pic-container {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+.about-pic {
+  border-radius: 2rem;
+  max-width: 100%;
+  /* 可加上：width: 80%; 或 300px; 等，看你想多大 */
+}
 
   /* EXPERIENCE SECTION */
 
