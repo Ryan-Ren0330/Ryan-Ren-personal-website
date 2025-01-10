@@ -48,6 +48,17 @@
   }
   
   @media screen and (max-width: 600px) {
+    .section__pic-container {
+      width: 100%;          /* 容器宽度撑满屏幕 */
+      max-width: 300px;     /* 让它不会太大 */
+      margin: 0 auto 2rem;  /* 居中 + 外边距 */
+    }
+    
+    .about-pic {
+      width: 100%;          /* 图片宽度自适应容器 */
+      height: auto;         /* 自动等比例缩放 */
+    }
+    
     #contact,
     footer {
       height: 40vh;
