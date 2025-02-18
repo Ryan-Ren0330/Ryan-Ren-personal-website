@@ -217,10 +217,11 @@ a:hover{
 
   /* BUTTONS */
 
-.btn-container {
+  .btn-container {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-around;
+    margin-top: auto; /* 让按钮部分自动吸附到底部 */
   }
 
 
